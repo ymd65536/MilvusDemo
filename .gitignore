@@ -1,5 +1,8 @@
 # envrionment
 .env
+.venv
+.pytest_cache
+.ruff_cache
 
 # python
 .pyc
@@ -8,6 +11,7 @@ bin
 lib
 lib64
 include
+*.egg-info
 
 # macOS
 .DS_Store
