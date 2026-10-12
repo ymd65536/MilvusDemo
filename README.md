@@ -25,16 +25,16 @@ production architecture.
 
 ## Start locally
 
-Requirements: Docker Compose and Python 3.11+.
+Requirements: Docker Compose, Python 3.12, and
+[uv](https://docs.astral.sh/uv/getting-started/installation/). GitHub Codespaces
+installs uv and synchronizes the locked environment automatically.
 
 ```bash
 docker compose up -d milvus
 cp .env.example .env
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-python scripts/seed.py
-uvicorn app.main:app --reload
+uv sync
+uv run python scripts/seed.py
+uv run uvicorn app.main:app --reload
 ```
 
 The embedding model is downloaded from Hugging Face on the first seed/search.
@@ -51,7 +51,7 @@ MILVUS_TOKEN=username:password
 MILVUS_DB_NAME=default
 ```
 
-Then run `python scripts/seed.py` and start Uvicorn as above. Do not commit
+Then run `uv run python scripts/seed.py` and start Uvicorn as above. Do not commit
 `.env`; it is ignored by Git.
 
 ## Endpoint and feature map
@@ -225,6 +225,6 @@ Tests replace Milvus with a fake service, so no server or model download is
 needed:
 
 ```bash
-pytest
-ruff check .
+uv run pytest
+uv run ruff check .
 ```
