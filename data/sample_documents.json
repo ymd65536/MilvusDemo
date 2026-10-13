@@ -1,0 +1,66 @@
+[
+  {
+    "id": "doc-001",
+    "text": "Milvus is a vector database designed for scalable similarity search.",
+    "category": "database",
+    "rating": 4.9,
+    "year": 2024,
+    "metadata": {"language": "en", "level": "intro"}
+  },
+  {
+    "id": "doc-002",
+    "text": "Dense embeddings capture semantic meaning in natural language.",
+    "category": "machine-learning",
+    "rating": 4.7,
+    "year": 2023,
+    "metadata": {"language": "en", "level": "intro"}
+  },
+  {
+    "id": "doc-003",
+    "text": "BM25 ranks text by matching sparse term frequencies.",
+    "category": "search",
+    "rating": 4.6,
+    "year": 2024,
+    "metadata": {"language": "en", "level": "advanced"}
+  },
+  {
+    "id": "doc-004",
+    "text": "Hybrid search combines semantic vectors with keyword relevance.",
+    "category": "search",
+    "rating": 4.8,
+    "year": 2025,
+    "metadata": {"language": "en", "level": "advanced"}
+  },
+  {
+    "id": "doc-005",
+    "text": "Partitions organize collection data into logical groups.",
+    "category": "database",
+    "rating": 4.2,
+    "year": 2022,
+    "metadata": {"language": "en", "level": "intermediate"}
+  },
+  {
+    "id": "doc-006",
+    "text": "HNSW is a graph index with fast approximate nearest neighbor search.",
+    "category": "index",
+    "rating": 4.5,
+    "year": 2023,
+    "metadata": {"language": "en", "level": "advanced"}
+  },
+  {
+    "id": "doc-007",
+    "text": "Scalar filters restrict vector results using document attributes.",
+    "category": "search",
+    "rating": 4.4,
+    "year": 2024,
+    "metadata": {"language": "en", "level": "intermediate"}
+  },
+  {
+    "id": "doc-008",
+    "text": "Batch insertion improves throughput when loading many documents.",
+    "category": "database",
+    "rating": 4.3,
+    "year": 2021,
+    "metadata": {"language": "en", "level": "intermediate"}
+  }
+]
